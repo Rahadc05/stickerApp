@@ -1,0 +1,129 @@
+/* Navbar Styles */
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    height: 40px;
+  }
+  
+  .nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1.5rem;
+    color: #6c757d;
+  }
+  
+  .nav-item {
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+  }
+  
+  .dropdown-item {
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .icons-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .search-input {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+  }
+  
+  .search-btn {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    background: white;
+    cursor: pointer;
+  }
+  
+  .search-icon {
+    margin-right: 5px;
+  }
+  
+  .icon {
+    cursor: pointer;
+  }
+  
+  .cart-container {
+    position: relative;
+  }
+  
+  .cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    padding: 0.2rem 0.5rem;
+    font-size: 12px;
+  }
+  
+  .menu-btn {
+    display: none;
+    background: none;
+    border: none;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-menu {
+      display: none;
+    }
+  
+    .menu-btn {
+      display: block;
+    }
+  
+    .mobile-menu {
+      list-style: none;
+      padding: 1rem;
+      background-color: white;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  
+    .mobile-menu-item {
+      padding: 1rem;
+      border-bottom: 1px solid #eee;
+      cursor: pointer;
+    }
+  }
+  
+  .banner-container {
+    width: 100%;
+  }
+  
+  .banner-img {
+    width: 100%;
+    height: auto;
+  }
+  

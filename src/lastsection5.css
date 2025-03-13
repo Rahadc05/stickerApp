@@ -1,0 +1,156 @@
+/* Footer Styling */
+.footer {
+    position: relative;
+    background: linear-gradient(60deg, rgb(0, 0, 0) 0%, rgb(11, 11, 11) 100%);
+    text-align: center;
+    color:rgb(230, 203, 162);
+  }
+  
+  /* Waves Styling */
+  .footer-waves {
+    position: relative;
+    width: 100%;
+    height: 5vh;
+    min-height: 100px;
+    max-height: 150px;
+    top: -35px;
+    z-index: 500;
+    color: #007bff;
+  }
+  
+  .waves {
+    position: relative;
+    width: 100%;
+    height: 35%;
+    margin-bottom: -5px; /* Fix for Safari gap */
+  }
+  
+  /* Animation */
+  .parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite;
+  }
+  .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+  .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  
+  @keyframes move-forever {
+    0% {
+      transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+      transform: translate3d(85px, 0, 0);
+    }
+  }
+  
+  /* Footer Container */
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px;
+    text-align: left;
+  }
+  
+  .footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section p,
+  .footer-section ul {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-section ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .subscribe {
+    display: flex;
+    align-items: center;
+  }
+  
+  .subscribe input {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    width: 70%;
+  }
+  
+  .subscribe button {
+    background: white;
+    color: #007bff;
+    border: none;
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .footer-bottom {
+    padding: 15px;
+    text-align: center;
+    font-size: 12px;
+  }
+  
+  .footer-bottom a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+  
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-waves {
+      height: 40px;
+      min-height: 40px;
+    }
+  
+    .subscribe {
+      flex-direction: column;
+    }
+  
+    .subscribe input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  

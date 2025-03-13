@@ -1,0 +1,106 @@
+.collage-store-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .collage-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .collage-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .collage-card {
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .collage-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .collage-image {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .collage-info {
+    margin-top: 10px;
+  }
+  
+  .old-price {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  .new-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .collage-name {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  
+  /* Button Styling with Shimmer Effect */
+  .add-to-cart,
+  .view-all {
+    position: relative;
+    overflow: hidden;
+    background: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .add-to-cart::before,
+  .view-all::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.15),
+      rgba(255, 255, 255, 0.05)
+    );
+    transform: skewX(-25deg);
+    transition: left 0.5s ease;
+  }
+  
+  .add-to-cart:hover::before,
+  .view-all:hover::before {
+    left: 125%;
+  }
+  
+  /* Centering the 'View All' Button */
+  .view-all-container {
+    margin-top: 20px;
+  }
+  
+  .view-all {
+    padding: 10px 20px;
+    width: auto;
+  }
+  
